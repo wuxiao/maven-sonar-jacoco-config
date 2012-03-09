@@ -6,7 +6,7 @@ import sonar.jacoco.config.core.Foo;
 
 public class FooBIT {
   @Test
-  public void doA() {
-    new Foo().doAIntegrationTest();
+  public void doB() {
+    new Foo().doNestedBIntegrationTest();
   }
 }
