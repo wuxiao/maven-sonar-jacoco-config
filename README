@@ -1,3 +1,3 @@
 Base configuration to use sonar with jacoco.
 
-Run with "mvn -P sonar:sonar".
+Run with "mvn -Psonar sonar:sonar".
