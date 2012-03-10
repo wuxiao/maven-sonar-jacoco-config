@@ -1,8 +1,6 @@
 Base configuration to use sonar with jacoco in a multi-module project.  
 
-TODO: IT coverage doesn't work in multi-module projects.  Sonar seems to only 
-check the root level location. 
-Possible hack would be to use ant to merge all available reports into root level 
-location.
+Note: IT coverage doesn't display per module in a multi-module projects.  
+So current configuration just displays the aggregate IT coverage of all modules.
 
 Run with: mvn -Psonar verify sonar:sonar

@@ -26,8 +26,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-  <dependencies>
-  </dependencies>
+  <prerequisites>
+    <maven>3.0.4</maven>
+  </prerequisites>
 
   <dependencyManagement>
     <dependencies>
@@ -86,7 +87,8 @@
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
         <sonar.jacoco.reportPath>${project.build.directory}/jacoco-unit.exec</sonar.jacoco.reportPath>
-        <sonar.jacoco.itReportPath>${project.build.directory}/jacoco-it.exec</sonar.jacoco.itReportPath>
+        <!-- Dumps all it coverage relative to root directory -->
+        <sonar.jacoco.itReportPath>${user.dir}/target/jacoco-it.exec</sonar.jacoco.itReportPath>
       </properties>
 
       <build>
