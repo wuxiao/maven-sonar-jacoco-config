@@ -1,6 +1,6 @@
 Base configuration to use sonar with jacoco in a multi-module project.  
 
-Note: IT coverage doesn't display per module in a multi-module projects.  
+Note: Sonar can't display IT coverage per module in a multi-module project.  
 So current configuration just displays the aggregate IT coverage of all modules.
 
 Run with: mvn -Psonar verify sonar:sonar
