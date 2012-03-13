@@ -3,4 +3,6 @@ Base configuration to use sonar with jacoco in a multi-module project.
 Note: Sonar can't display IT coverage per module in a multi-module project.  
 So current configuration just displays the aggregate IT coverage of all modules.
 
-Run with: mvn -Psonar verify sonar:sonar
+Runs in 2 stages for use with jenkins: 
+mvn -Pprepare-for-sonar verify
+mvn -Psonar sonar:sonar
